@@ -77,7 +77,7 @@ class Mod(Function):
             else:
                 if isinstance(d, int):
                     rv = p - d*q
-                    if (rv*q < 0) == True:
+                    if rv*q < 0:
                         rv += q
                     return rv
 
